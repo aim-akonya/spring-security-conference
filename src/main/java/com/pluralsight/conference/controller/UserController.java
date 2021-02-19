@@ -13,6 +13,7 @@ public class UserController {
     public User getUser(@RequestParam(value = "firstname", defaultValue = "Bryan") String firstname,
                         @RequestParam(value = "lastname", defaultValue = "Hansen") String lastname,
                         @RequestParam(value = "age", defaultValue = "43") int age) {
+    	
         User user = new User();
 
         user.setFirstname(firstname);
